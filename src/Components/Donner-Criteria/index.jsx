@@ -2,6 +2,7 @@ import React from "react";
 import './Donner-Criteria.css'
 const DonnerCroteriaSection = () => {
     return(
+      
         <div className="set-alignment-container">
   <div className="perent-donation-criteria">
     <div className="container eligibility-container">
@@ -10,7 +11,7 @@ const DonnerCroteriaSection = () => {
         <h2 className="gallery__title">Organ Donation Criteria</h2>
       </div>
       {/* Grid of Cards */}
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  col" data-aos="fade-up">
         {/* Kidney Donation */}
         <div className="col">
           <div className="eligibility-card">

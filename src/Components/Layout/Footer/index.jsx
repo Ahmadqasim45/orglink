@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* About Us Section */}
         <div className="col-lg-3 col-md-6">
-          <h3 className="section-title">About Us</h3>
+          <h3 className="section-title-footer">About Us</h3>
           <ul className="footer-links">
             <li><a href="#">Our Mission</a></li>
             <li><a href="#">Donation Process</a></li>
@@ -50,8 +50,8 @@ const Footer = () => {
         </div>
 
         {/* Useful Links Section */}
-        <div className="col-lg-3 col-md-6">
-          <h3 className="section-title">Useful Links</h3>
+        <div className="col-lg-3 col-md-6 ">
+          <h3 className="section-title-footer">Useful Links</h3>
           <ul className="footer-links">
             <li><a href="#">Donor Registration</a></li>
             <li><a href="#">Success Stories</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Impact Section */}
         <div className="col-lg-3 col-md-6">
-          <h3 className="section-title">Success Stories</h3>
+          <h3 className="section-title-footer">Success Stories</h3>
           <div className="footer-causes-grid">
             <img
               className="img-fluid footer-cause-image"

@@ -128,7 +128,7 @@
   
   .od-card__text {
     color: var(--TextColor);
-    font-size: 1.1rem;
+    font-size: 16px !important;
     line-height: 1.6;
     margin-top: 1rem;
 

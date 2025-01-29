@@ -1,13 +1,14 @@
 /* Navbar Styling */
 .custom-navbar {
     background-color: var(--BackgroundColor);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 0.7px solid rgba(0, 0, 0, 0.132);
+
     transition: all 0.3s ease-in-out;
   }
   
-  .custom-navbar:hover {
+  /* .custom-navbar:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
+  } */
   
   .navbar-brand {
     font-family: var(--primary-font-family);
