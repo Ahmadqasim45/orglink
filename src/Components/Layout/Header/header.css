@@ -1,0 +1,136 @@
+/* Navbar Styling */
+.custom-navbar {
+    background-color: var(--BackgroundColor);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-navbar:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .navbar-brand {
+    font-family: var(--primary-font-family);
+    font-weight: var(--poppins-heading-font-weight);
+    font-size: 1.5rem;
+    color: var(--PrimaryColor);
+    margin-left: 0px;
+  }
+  
+  .navbar-brand span {
+    font-weight: var(--poppins-sub-heading-font-weight);
+  }
+  
+  .navbar-brand .text-secondary {
+    color: var(--SecondaryColor);
+  }
+  
+  .navbar-brand .text-accent {
+    color: var(--AccentColor);
+  }
+  
+  .nav-link {
+    font-family: var(--primary-font-family);
+    font-weight: var(--BodyText);
+    color: var(--TextColor);
+    padding-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--PrimaryColor);
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-link.active {
+    color: var(--PrimaryColor) !important;
+    
+  
+  }
+  
+  
+  .nav-link:hover {
+    color: var(--PrimaryColor);
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-link:not(:hover)::after {
+    width: 0;
+    left: 0;
+  }
+  
+   .btn-donor {
+    border: 1px solid var(--PrimaryColor) !important;
+    color: var(--PrimaryColor) !important;
+    font-family: var(--primary-font-family) !important;
+    font-weight: var(--poppins-heading-font-weight) !important;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-donor:hover {
+    background-color: var(--PrimaryColor) !important;
+    color: var(--BackgroundColor) !important;
+    transform: scale(1.05);
+  }
+  .custom-hero-button{
+    border: 1px solid var(--PrimaryColor)  !important;
+    color: var(--PrimaryColor) !important;
+    font-family: var(--primary-font-family);
+    font-weight: var(--poppins-heading-font-weight);
+    transition: all 0.3s ease-in-out;
+  }
+  .custom-hero-button:hover {
+    background-color: var(--PrimaryColor) !important;
+    color: var(--BackgroundColor) !important;
+    transform: scale(1.05);
+  }
+  
+  /* Style for the hamburger menu toggle button */
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+    padding: 0;
+  }
+  
+  .navbar-toggler:hover {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler .fa-bars,
+  .navbar-toggler .fa-x {
+    color: var(--PrimaryColor);
+  }
+  
+  .navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+  
+  /* Center the navbar links */
+  .custom-navbar .d-flex.justify-content-center {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .collapse {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .collapse.show {
+    display: block;
+  }
+ 

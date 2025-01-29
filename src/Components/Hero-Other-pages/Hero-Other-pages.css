@@ -1,0 +1,60 @@
+ /* Parent container for alignment */
+ .parent-other-hero {
+    
+    
+  
+
+    /* Hero header section style */
+    .other-pages-hero-header-section {
+      width: 100%;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center;
+      height: 400px !important;
+      text-align: center !important;
+      overflow: hidden;
+      /* background-color: #f7f7f7; Light background for a clean look */
+    }
+  
+    .other-pages-hero-main-heading {
+      font-size: 40px; /* Matches specified size */
+      font-weight: 600; /* Bold font weight */
+      /* margin-bottom: 24px; Spacing below heading */
+      color: var(--SecondaryColor); /* Custom color variable */
+      line-height: 1.2;
+    }
+  
+    .other-pages-hero-sub-text {
+      font-size: 16px;
+      color: var(--SecondaryColor); /* Consistent color */
+      max-width: 720px;
+      margin: 0 auto; /* Center align the text */
+      line-height: 1.6;
+    }
+  
+    /* Container width adjustment */
+    .other-pages-container {
+      max-width: 1140px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .other-pages-hero-main-heading {
+        font-size: 32px; /* Reduce font size for tablets */
+      }
+  
+      .other-pages-hero-sub-text {
+        font-size: 14px; /* Slightly smaller font for readability */
+      }
+      /* Container width adjustment */
+      .other-pages-hero-header-section {
+      /* max-width: 1140px; */
+      /* padding-left: 24px; */
+      /* padding-right: 24px; */
+      height: 150px !important;
+    }
+    }
+  }

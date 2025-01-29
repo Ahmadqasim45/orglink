@@ -1,0 +1,102 @@
+
+
+.perent-donation-criteria{
+
+
+
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background-color:var(  --HeadingColor);
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+    .eligibility-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+   
+    .eligibility-card {
+        background:white;
+        border-radius: 20px;
+        border: 0.7px solid rgba(0, 0, 0, 0.132);
+   
+        padding: 30px;
+        /* color: white; */
+        overflow: hidden;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; /* Equal height for all cards */
+    }
+   
+    .eligibility-card:hover {
+        transform: translateY(-10px);
+        /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); */
+    }
+   
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+   
+   
+    
+   
+    
+   
+   
+   
+    .card-body ul {
+        list-style: none;
+        padding-left: 0;
+    }
+   
+    .card-body ul li {
+        margin: 12px 0;
+        
+        display: flex;
+        align-items: center;
+    }
+   
+    .card-body ul li i {
+        color: var(--PrimaryColor);
+   
+        margin-right: 10px;
+        font-size: 1.3rem;
+    }
+    .card-body p{
+        padding-left: 30px;
+    }
+   
+    .show-more-less {
+        cursor: pointer;
+        
+        margin-top: 20px;
+        color: var(--PrimaryColor);
+        
+        text-decoration: underline;
+    }
+   
+    @media (max-width: 768px) {
+        .eligibility-card {
+            margin-bottom: 20px;
+        }
+        .card-header{
+            padding-left: 0px !important;
+            
+        }
+        .card-body p {
+            padding-left: 0px !important;
+        }
+    }
+   }
+   

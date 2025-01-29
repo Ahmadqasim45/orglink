@@ -1,0 +1,203 @@
+/* Hero Section Styling */
+.custom-hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  
+  /* Headline Section */
+  .custom-hero-headline {
+    color: var(--TextColor);
+    padding: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    color: var(--SecondaryColor);
+  }
+  
+  .custom-hero-subheadline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--SecondaryColor);
+  }
+  
+  .custom-hero-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: var(--SecondaryColor);
+    text-transform: capitalize;
+  }
+  
+  .custom-hero-title .highlight {
+    color: var(--AccentColor);
+  }
+  
+  /* Image Section */
+  .custom-hero-image {
+    position: relative;
+    min-height: 350px;
+    background-position: center right;
+    background-size: 100% 100%;
+    background-image: url("../../Assets/images/hero\ main.png");
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+    pointer-events: none;
+    object-fit: cover;
+  }
+  
+  /* Video iframe positioning */
+  .video-overlay iframe {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translateX(-10%) translateY(-50%);
+    z-index: 10;
+    width: 50%;
+    max-width: 400px;
+    height: 300px;
+    pointer-events: auto;
+  }
+  
+  /* Play Button Styles */
+  .video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+    cursor: pointer !important;
+    pointer-events: auto;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: var(--PrimaryColor);
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: var(--PrimaryColor);
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#fa183d, 10%);
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  /* Mobile and Tablet Breakpoints */
+  @media screen and (max-width: 992px) {
+    .custom-hero-section {
+      padding-left: 30px;
+      flex-direction: column; /* Stacks the text and image vertically on tablet and mobile */
+      justify-content: flex-start;
+    }
+  
+    .custom-hero-headline {
+      display: flex !important;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: center; /* Centers the text on smaller screens */
+    }
+  
+    .custom-hero-image {
+      margin-top: 20px; /* Adds space between the text and the image */
+      width: 100%; /* Ensures the image takes full width */
+      height: auto; /* Adjusts the height accordingly */
+      clip-path: none; /* Remove clip-path for better mobile layout */
+    }
+  }
+  
+  @media screen and (max-width: 762px) {
+    .custom-hero-section {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 0px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 250px !important;
+      flex-direction: column; /* Stacks content vertically */
+    }
+  
+    .custom-hero-headline {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center; /* Centers text for mobile */
+    }
+  
+    .custom-hero-image {
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+      clip-path: none; /* Remove clip-path on small screens */
+    }
+  
+    .custom-hero-title {
+      text-align: center !important;
+      font-size: 1.3rem !important;
+    }
+  }
+  

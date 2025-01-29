@@ -1,0 +1,127 @@
+
+
+
+.org-about-section-container{
+    padding: 0px 42px;
+}
+.org-about-section-main-heading {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    /* color:var(--SecondaryColor); */
+    margin-bottom: 48px;
+    font-family: var(--primary-font-family);
+    font-weight: var(--poppins-heading-font-weight);
+    color: var(--SecondaryColor);
+}
+
+.org-about-section-content-section {
+    max-width: 600px;
+}
+
+.org-about-section-section-item {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.org-about-section-icon-circle {
+    width: 30px;
+    height: 30px;
+    background-color:var(--PrimaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.org-about-section-icon-circle svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.org-about-section-section-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--SecondaryColor);
+}
+
+.org-about-section-section-content p {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.org-about-section-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-left: 40px;
+    
+}
+
+.org-about-section-image-card {
+    width: 100%;
+    height: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.org-about-section-image-1 {
+    background: linear-gradient(to bottom right, #8B4513, #D2691E);
+}
+
+.org-about-section-image-2 {
+    background: linear-gradient(to bottom right, #4A4A4A, #8B7355);
+}
+
+@media (max-width: 991px) {
+    .org-about-section-image-grid {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .org-about-section-image-card {
+        height: 320px;
+    }
+    .org-about-section-container{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .org-about-section-image-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .org-about-section-main-heading {
+        font-size: 36px;
+    }
+        .org-about-section-section-content h2{
+            font-size: 1.4rem !important;
+        }
+        .org-about-section-icon-circle{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 5px; */
+        }
+    
+        .org-about-section-section-item{
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center;
+        }
+}
