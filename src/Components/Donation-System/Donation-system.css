@@ -52,7 +52,7 @@
 
     .section-text {
         /* color: var(--TextColor); Using TextColor variable */
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         line-height: 1.6;
     }
 
@@ -60,7 +60,7 @@
         list-style: none;
         padding: 0;
         display: grid;
-        grid-template-columns: 1.8fr 1.8fr;
+        grid-template-columns: 1.5fr 1.8fr;
         gap: 0px !important;
         margin-bottom: 0;
     }
@@ -68,6 +68,7 @@
     .step-item {
         display: flex;
         align-items: center !important;
+        height: 30px;
         gap: 12px;
     }
 
