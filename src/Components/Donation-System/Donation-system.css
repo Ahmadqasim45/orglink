@@ -11,6 +11,7 @@
         display: flex;
         align-items:stretch;
         justify-content: space-between;
+        align-items: center;
         height: 500px;
     }
 
@@ -27,7 +28,7 @@
 
     .img-container img {
         width: 100%;
-        height: 100%;
+        height: 70%;
         object-fit: cover;
         border-radius: 16px;
     }
@@ -46,10 +47,11 @@
         line-height: 1.2;
         margin-bottom: 24px;
         color: var(--HeadingColor) !important; /* Using HeadingColor variable */
+        text-align: left;
     }
 
     .section-text {
-        color: var(--TextColor); /* Using TextColor variable */
+        /* color: var(--TextColor); Using TextColor variable */
         margin-bottom: 40px;
         line-height: 1.6;
     }
@@ -58,8 +60,8 @@
         list-style: none;
         padding: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
+        grid-template-columns: 1.8fr 1.8fr;
+        gap: 0px !important;
         margin-bottom: 0;
     }
 
@@ -70,22 +72,23 @@
     }
 
     .step-number {
-        background-color: var( --PrimaryColor); /* Using SecondaryColor variable */
+        /* background-color: var( --PrimaryColor); Using SecondaryColor variable */
         color: white;
-        width: 24px;
-        height: 24px;
+        width: 17px;
+        height: 17px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 14px;
+        font-size: 12px;
         flex-shrink: 0;
         margin-top: 20px;
     }
 
     .step-text {
-        font-weight: 500;
-        color: var(--TextColor); /* Using TextColor variable */
+        font-weight: 400 !important;
+        /* color: var(--TextColor); Using TextColor variable */
+        font-size: 14px !important;
     }
 
     @media (max-width: 991px) {

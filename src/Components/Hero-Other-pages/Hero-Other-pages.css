@@ -11,7 +11,7 @@
       align-items: center !important;
       justify-content: center !important;
       text-align: center;
-      height: 400px !important;
+      height: 250px !important;
       text-align: center !important;
       overflow: hidden;
       /* background-color: #f7f7f7; Light background for a clean look */
@@ -26,7 +26,7 @@
     }
   
     .other-pages-hero-sub-text {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--SecondaryColor); /* Consistent color */
       max-width: 720px;
       margin: 0 auto; /* Center align the text */

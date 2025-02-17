@@ -4,7 +4,7 @@ import './Organ-Donation-Types.css';
     return (
         <>
         
-  <div className="paren-organ-types">
+  <div className="paren-organ-types px-2">
     <div className="gallery__header">
       <div className="gallery__subtitle">Organ Donation Types</div>
       <h2 className="gallery__title">

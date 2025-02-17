@@ -3,7 +3,7 @@ import './Hero-Other-pages.css'; // Ensure this file exists and the path is corr
 
 const HeroSectionOtherPages = ({ title, subText }) => {
   return (
-    <div className="parent-other-hero mt-5">
+    <div className="parent-other-hero ">
       <header className="other-pages-hero-header-section">
         <div className="other-pages-container">
           <h1>{title}</h1>

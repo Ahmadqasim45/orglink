@@ -4,13 +4,13 @@ import img from '../../Assets/images/kidney.jpeg'
 const TransformingAboutSection =() =>{
     return(
         <div className="set-alignment-container">
-        <div className="parent-transforming-container">
+        <div className="parent-transforming-container mt-5">
   <div className="container-fluid">
     <section className="orglink-hero">
       <div className="gallery__header ">
         <div
           className="gallery__subtitle"
-          style={{ marginTop: "100px !important" }}
+          style={{ marginTop: "100px" }}
         >
           Transforming
         </div>

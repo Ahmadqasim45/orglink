@@ -1,13 +1,14 @@
 
 .partner {
   width: 100% !important;
-  height: 150px;
+  height: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* border-radius: 50%; */
   /* background-color: #eaeaea; */
   overflow: hidden;
+  padding-bottom: 0px !important;
  
 }
 .partner img {

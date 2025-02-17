@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import './App.css';
 import App from './App';
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

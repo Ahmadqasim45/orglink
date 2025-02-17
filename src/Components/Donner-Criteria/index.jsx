@@ -11,7 +11,7 @@ const DonnerCroteriaSection = () => {
         <h2 className="gallery__title">Organ Donation Criteria</h2>
       </div>
       {/* Grid of Cards */}
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  col" data-aos="fade-up">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  col" >
         {/* Kidney Donation */}
         <div className="col">
           <div className="eligibility-card">

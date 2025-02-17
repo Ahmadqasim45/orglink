@@ -3,7 +3,8 @@ import './work-station.css';
  const WorkStation = () => {
     return(
         // <div className="set-alignment-container">
-        <section className="od-section " style={{ marginTop: '100px' }}>
+        <div className="parent-work-section">
+        <section className="od-section " >
 
   <div className="container-fluid">
     {/* Navigation (Tabs) */}
@@ -158,7 +159,7 @@ import './work-station.css';
     </div>
   </div>
 </section>
-// </div>
+</div> 
     )
  }
 

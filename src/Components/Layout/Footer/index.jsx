@@ -11,7 +11,7 @@ import Story6 from '../../../Assets/images/gallery-6.webp'
 const Footer = () => {
   return (
     <div className="set-alignment-container">
-    <footer className="container-fluid p-5">
+    <footer className="container-fluid px-5 py-0">
       <div className="row g-5">
         {/* Organization Info Section */}
         <div className="col-lg-3 col-md-6">
@@ -43,8 +43,8 @@ const Footer = () => {
           <ul className="footer-links">
             <li><a href="#">Our Mission</a></li>
             <li><a href="#">Donation Process</a></li>
-            <li><a href="#">Medical Team</a></li>
-            <li><a href="#">Partner Hospitals</a></li>
+            {/* <li><a href="#">Medical Team</a></li> */}
+            {/* <li><a href="#">Partner Hospitals</a></li> */}
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -55,8 +55,9 @@ const Footer = () => {
           <ul className="footer-links">
             <li><a href="#">Donor Registration</a></li>
             <li><a href="#">Success Stories</a></li>
-            <li><a href="#">Medical Resources</a></li>
-            <li><a href="#">Legal Guidelines</a></li>
+            {/* <li><a href="#">Medical Resources</a></li> */}
+            {/* <li><a href="#">Legal Guidelines</a></li> 
+            */}
             <li><a href="#">Support Services</a></li>
           </ul>
         </div>

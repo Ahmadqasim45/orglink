@@ -6,7 +6,7 @@ const HeroHome = () => {
     <div className="parent-hero padding-all-section">
       <div
         className="custom-hero-section d-sm-flex align-items-center justify-content-between"
-        style={{ height: "100vh" }}
+        style={{ height: "70vh" }}
       >
         <div className="custom-hero-headline col-md-5 d-flex flex-column align-items-start justify-content-start">
           <div className="custom-hero-content">
@@ -37,7 +37,7 @@ const HeroHome = () => {
           </a> */}
           {/* Video Overlay (Hidden by default) */}
           <div id="video-overlay" className="video-overlay">
-            <a className="video-overlay-close">×</a>
+            {/* <a className="video-overlay-close">×</a> */}
           </div>
         </div>
       </div>

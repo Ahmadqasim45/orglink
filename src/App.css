@@ -86,12 +86,15 @@ p {
 }
 @media screen and (max-width:992px) {
   .set-alignment-container{
-  margin-top: 100px !important;
+  margin-top: 0px !important;
 
   }
   .align-ment-horizontal{
     padding: 0px !important;
     
+  }
+  .gallery__header{
+    margin-top: 70px !important;
   }
 }
 
