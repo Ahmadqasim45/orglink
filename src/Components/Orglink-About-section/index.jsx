@@ -8,7 +8,7 @@ const OrglinkAboutSection = () => {
   return (
     <>
       <div className="gallery__header">
-        <div className="gallery__subtitle" style={{ marginTop: 150 }}>
+        <div className="gallery__subtitle" >
           About Us
         </div>
         <h2 className="gallery__title">About Orglink</h2>

@@ -31,7 +31,9 @@ const About = () => {
             subText="Orglink saves lives. By becoming an organ donor, you can help people in need and offer hope for a better future. Your generosity can make a life-changing difference."
           />
           <Statistic />
+          <div className="set-alignment-container">
           <OrglinkAboutSection />
+          </div>
           <TransformingAboutSection />
           <SuccessStories />
           <PartnerSection />

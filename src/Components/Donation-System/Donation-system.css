@@ -8,7 +8,7 @@
     }
 
     .equal-columns {
-        display: flex;
+        display: flex !important;
         align-items:stretch;
         justify-content: space-between;
         align-items: center;
@@ -94,8 +94,9 @@
     @media (max-width: 991px) {
         .equal-columns {
             flex-direction: column;
-            padding: 80px 0px !important;
+            /* padding: 50px 0px !important; */
             width: 100%;
+            margin-top: 400px
         }
 
         .equal-column {

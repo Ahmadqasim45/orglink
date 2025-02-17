@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './Donation-system.css';
-import DonationImage from './../../Assets/images/below-hero.png';
+import DonationImage from './../../Assets/images/heart-6873709_1280.jpg';
 
 const DonationSystem = () => {
   useEffect(() => {
