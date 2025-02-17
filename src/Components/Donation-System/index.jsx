@@ -53,7 +53,7 @@ const DonationSystem = () => {
                     </li>
                     <li className="step-item" data-aos="fade-up" data-aos-delay="800">
                       <span className="step-number">4</span>
-                      <span className="step-text">Stay connected and spread awareness</span>
+                      <span className="step-text">Stay connected</span>
                     </li>
                   </ul>
                 </div>
