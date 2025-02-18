@@ -42,6 +42,14 @@
   
     /* Media query for smaller screens */
     @media (max-width: 768px) {
+      .other-pages-hero-header-section{
+        height: 300px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       margin-top: 40px;
+
+      }
       .other-pages-hero-main-heading {
         font-size: 32px; /* Reduce font size for tablets */
       }
