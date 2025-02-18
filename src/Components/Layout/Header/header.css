@@ -1,137 +1,166 @@
-/* Navbar Styling */
+/* Navbar Base Styling */
 .custom-navbar {
-    background-color: var(--BackgroundColor);
-    border: 0.7px solid rgba(0, 0, 0, 0.132);
+  background-color: var(--BackgroundColor);
+  border: 0.7px solid rgba(0, 0, 0, 0.132);
+  transition: all 0.3s ease-in-out;
+}
 
-    transition: all 0.3s ease-in-out;
+.navbar-brand {
+  font-family: var(--primary-font-family);
+  font-weight: var(--poppins-heading-font-weight);
+  font-size: 1.5rem;
+  color: var(--PrimaryColor);
+  margin-left: 0px;
+}
+
+/* Navigation Links */
+.nav-link {
+  font-family: var(--primary-font-family);
+  font-weight: var(--BodyText);
+  color: var(--TextColor);
+  padding-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--PrimaryColor);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link.active {
+  color: var(--PrimaryColor) !important;
+}
+
+.nav-link:hover {
+  color: var(--PrimaryColor);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button Styles */
+.btn-donor {
+  border: 1px solid var(--PrimaryColor) !important;
+  color: var(--PrimaryColor) !important;
+  font-family: var(--primary-font-family) !important;
+  font-weight: var(--poppins-heading-font-weight) !important;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.btn-donor:hover {
+  background-color: var(--PrimaryColor) !important;
+  color: var(--BackgroundColor) !important;
+  transform: scale(1.05);
+}
+
+/* Enhanced Mobile Menu Styles */
+.navbar-toggler {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.navbar-toggler .fa-bars,
+.navbar-toggler .fa-x {
+  color: var(--PrimaryColor);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Menu Animation */
+.navbar-collapse {
+  position: fixed;
+  top: 72px; /* Adjust based on your navbar height */
+  left: -100%;
+  width: 80%;
+  height: calc(100vh - 72px);
+  background-color: var(--BackgroundColor);
+  transition: left 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.navbar-collapse.show {
+  left: 0;
+}
+
+/* Mobile Menu Items */
+@media (max-width: 991px) {
+  .navbar-nav {
+      padding: 1rem;
   }
-  
-  /* .custom-navbar:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  } */
-  
-  .navbar-brand {
-    font-family: var(--primary-font-family);
-    font-weight: var(--poppins-heading-font-weight);
-    font-size: 1.5rem;
-    color: var(--PrimaryColor);
-    margin-left: 0px;
+
+  .nav-item {
+      margin: 0.5rem 0;
   }
-  
-  .navbar-brand span {
-    font-weight: var(--poppins-sub-heading-font-weight);
-  }
-  
-  .navbar-brand .text-secondary {
-    color: var(--SecondaryColor);
-  }
-  
-  .navbar-brand .text-accent {
-    color: var(--AccentColor);
-  }
-  
+
   .nav-link {
-    font-family: var(--primary-font-family);
-    font-weight: var(--BodyText);
-    color: var(--TextColor);
-    padding-bottom: 0.5rem;
-    position: relative;
-    display: inline-block;
+      padding: 0.75rem 0;
+      font-size: 1.1rem;
+      width: 100%;
   }
-  
+
   .nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--PrimaryColor);
-    transition: all 0.3s ease-in-out;
+      display: none;
   }
-  .nav-link.active {
-    color: var(--PrimaryColor) !important;
-    
-  
+
+  .btn-donor {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.75rem !important;
   }
-  
-  
-  .nav-link:hover {
-    color: var(--PrimaryColor);
+
+  /* Overlay when menu is open */
+  .navbar-collapse.show::before {
+      content: '';
+      position: fixed;
+      top: 72px;
+      right: 0;
+      bottom: 0;
+      width: 20%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
   }
-  
-  .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  
-  .nav-link:not(:hover)::after {
-    width: 0;
-    left: 0;
-  }
-  
-   .btn-donor {
-    border: 1px solid var(--PrimaryColor) !important;
-    color: var(--PrimaryColor) !important;
-    font-family: var(--primary-font-family) !important;
-    font-weight: var(--poppins-heading-font-weight) !important;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-donor:hover {
-    background-color: var(--PrimaryColor) !important;
-    color: var(--BackgroundColor) !important;
-    transform: scale(1.05);
-  }
-  .custom-hero-button{
-    border: 1px solid var(--PrimaryColor)  !important;
-    color: var(--PrimaryColor) !important;
-    font-family: var(--primary-font-family);
-    font-weight: var(--poppins-heading-font-weight);
-    transition: all 0.3s ease-in-out;
-  }
-  .custom-hero-button:hover {
-    background-color: var(--PrimaryColor) !important;
-    color: var(--BackgroundColor) !important;
-    transform: scale(1.05);
-  }
-  
-  /* Style for the hamburger menu toggle button */
-  .navbar-toggler {
-    border: none;
-    background: transparent !important;
-    padding: 0;
-  }
-  
-  .navbar-toggler:hover {
-    background-color: transparent;
-  }
-  
-  .navbar-toggler .fa-bars,
-  .navbar-toggler .fa-x {
-    color: var(--PrimaryColor);
-  }
-  
-  .navbar-toggler-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 25px;
-  }
-  
-  /* Center the navbar links */
-  .custom-navbar .d-flex.justify-content-center {
-    flex-grow: 1;
-    justify-content: center;
-  }
-  
-  .collapse {
-    display: none;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .collapse.show {
-    display: block;
-  }
- 
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Custom Hero Button */
+.custom-hero-button {
+  border: 1px solid var(--PrimaryColor) !important;
+  color: var(--PrimaryColor) !important;
+  font-family: var(--primary-font-family);
+  font-weight: var(--poppins-heading-font-weight);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-hero-button:hover {
+  background-color: var(--PrimaryColor) !important;
+  color: var(--BackgroundColor) !important;
+  transform: scale(1.05);
+}
